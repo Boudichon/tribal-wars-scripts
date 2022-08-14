@@ -47,7 +47,7 @@ $.getAll = function (
 function loadAtaques() {
 	console.log("novo")
 	var content = `
-    <table id="aChegar" class="vis"><tr><th width="280" class="nowrap">Nome</th><th width="40" class="nowrap">Ataques</th></tr></table>
+    <table id="aChegar" class="vis"><tr><th width="280" class="nowrap">Name</th><th width="40" class="nowrap">Attacks</th></tr></table>
     `;
 	Dialog.show('Supportfilter', content);
 
@@ -103,7 +103,7 @@ function loadAtaques() {
                     </tr>`);
 				}
 
-			}, () => $("#progress")[0].innerText = "Tudo carregado! xd", () => console.log("Terminou com erro!"))
+			}, () => $("#progress")[0].innerText = "All loaded! xd", () => console.log("Terminou com erro!"))
 
 		})
 		.fail((xhr) => {
