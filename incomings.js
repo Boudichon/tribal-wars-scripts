@@ -82,9 +82,9 @@ function loadAtaques() {
 				if(game_data.units.includes("militia")){
 					nCol += 1;
 				}
-				if(game_data.units.includes("knight")){
-					nCol += 1;
-				}
+				// if(game_data.units.includes("knight")){
+				// 	nCol += 1;
+				// }
 
 				var numAtaques = -1;
 				if($(data).find("#ally_content > div > div > table > tbody > tr:nth-child(1) > th:nth-child(2) > strong")[0]){
