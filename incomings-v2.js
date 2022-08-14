@@ -85,14 +85,13 @@ function loadAtaques() {
 				// if(game_data.units.includes("knight")){
 				// 	nCol += 1;
 				// }
-				console.log(nCol);
+				
 				var numAtaques = -1;
 				if($(data).find("#ally_content > div > div > table > tbody > tr:nth-child(1) > th:nth-child(2) > strong")[0]){
 					numAtaques = $(data).find("#ally_content > div > div > table > tbody > tr:nth-child(1) > th:nth-child(2) > strong")[0].innerText.replace("(", "").replace(")", "");
 				}else if($(data).find("#ally_content > div > div > table > tbody > tr:nth-child(1) > th:nth-child("+nCol+") > strong")[0]){
 					numAtaques = $(data).find("#ally_content > div > div > table > tbody > tr:nth-child(1) > th:nth-child("+nCol+") > strong")[0].innerText.replace("(", "").replace(")", "");
 				}
-				console.log(numAtaques);
 
 				if (numAtaques != -1) {
 					$("#aChegar").eq(0).append(`
