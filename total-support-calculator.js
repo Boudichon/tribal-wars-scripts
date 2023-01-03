@@ -1,4 +1,9 @@
 javascript: (() => {
+	if (window.hasCalculatedTotalTroops){
+		return;
+	}
+	
+	window.hasCalculatedTotalTroops = true;
 	const tbody = $("form#withdraw_selected_units_village_info table.vis tbody")[0];
 	
 	let rowCount = tbody.children.length - 2;
