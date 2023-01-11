@@ -1,5 +1,5 @@
 javascript: (() => {
-	const tbodys = $("tbody:has(>tr>th:has(>img[src*='spear.png'],>a>img[src*='spear.png']))");
+	const tbodys = $("tbody:has(>tr>th:has(>img[src*='spear.png'],>a>img[src*='spear.png'],>a[data-unit='spear']))");
 	
 	tbodys.each(function(index, tbody) {
 		if($(tbody).data("hasTotal")) return;
